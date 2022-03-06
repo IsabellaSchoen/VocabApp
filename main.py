@@ -36,7 +36,17 @@ def dictionary_categories(category):
     else:
         print("Wrong input!")
 
+def start_dictionary():
+    print("1: Adding new word to dictionary\n"
+          "2: Searching german word\n"
+          "3: Searching english word\n"
+          "4: Showing the whole dictionary\n"
+          "5: Exit\n"
+          )
+    print("Please enter your input: ")
+    user_input = int(input())
+    dictionary_categories(user_input)
+
 
 if __name__ == '__main__':
-    user_input = input()
-    dictionary_categories(user_input)
+    start_dictionary()
