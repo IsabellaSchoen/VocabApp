@@ -4,14 +4,19 @@ main_dictionary = {}
 
 
 def asking_german():  # getting german word by putting english word in
-    pass
+    put_word = input()
+    print(main_dictionary.get(put_word))
 
 def asking_english(name):
     pass
 
 
 def new_word():
-    pass
+    print("English Word:")
+    new_key = input()
+    print("German Word:")
+    new_value = input()
+    main_dictionary.update({new_key: new_value})
 
 
 def dictionary_categories(category):
